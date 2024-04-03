@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+    color: black;
+}
+body{
+    background-image: linear-gradient(to bottom right, #173f52, #333);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 22px black;
+    width: 80vw;
+    height: 80vh;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bg_login{
+    background: url('assets/bg.jpg')no-repeat;
+}
+
+.bg_create{
+    background: url('assets/bg1.jpg')no-repeat;
+}
+
+.bg_forget{
+    background: url('assets/bg2.jpg')no-repeat;
+}
+
+.banner_login{
+    width: 100%;
+    height: 130px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0 0 100% 100%;
+    margin: 0 0 10px;
+}
+
+.form_login{
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_login form{
+    position: relative;
+    width: 300px;
+}
+
+.form_item{
+    margin: 15px 0;
+}
+.form_item label{
+    display: block;
+    font-weight: 600;
+}
+.form_item input{
+    width: 100%;
+    height: 35px;
+    border: none;
+    padding: 0 10px 0 10px;
+    outline: none;
+    font-size: .9em;
+    color: black;
+    font-weight: 500;
+    border-radius: 2px;
+    background-color: #e4e2e2;
+}
+input:focus{
+    -webkit-border-before: none;
+}
+.form_forget{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: .8em;
+    margin: 10px 0;
+}
+.form_forget span a,
+.form_create a{
+    color: #305580;
+    text-decoration: none;
+    font-weight: 600;
+}
+.form_forget span a:hover,
+.form_create a:hover{
+    text-decoration: underline;
+}
+.btn_form{
+    border: none;
+    background-color: #214977;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.form_create{
+    font-size: .8em;
+    margin: 10px 0;
+    text-align: center;
+}
+.log_with{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.log_with span{
+    font-size: .9em;
+}
+.login_icons{
+    width: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+.login_icons ion-icon{
+    font-size: 1.7em;
+    color: black;
+}
+
+@media screen and (min-width: 800px) {
+    .app{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20% 0 0 0;
+    }
+
+    .banner_login{
+        width: 50%;
+        height: 100%;
+        border-radius: 20% 0 0 0;
+        margin: 0;
+        border:0;
+        border-right: 2px solid #333;
+    }
+}
+
